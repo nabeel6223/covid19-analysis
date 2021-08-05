@@ -1,0 +1,287 @@
+
+body{
+    background-color: #f2f6f9;
+}
+.head span{
+    color: rgb(63, 93, 173);
+}
+.first{
+    height: 500px;
+}
+.banner{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 60px;
+    flex-direction: column;
+    justify-content: space-evenly;
+position: absolute;
+    background-size: 100% 100%;
+    height: 500px;
+    width: 100%;
+    /* filter: blur(0.5px); */
+    background-image: url(https://news.cgtn.com/news/2021-06-20/China-s-billionth-vaccination-dose-A-big-step-forward-11fuks2Vxja/img/18ad00cb3c354cb987d1e08d49334606/18ad00cb3c354cb987d1e08d49334606-1920.jpeg);
+}
+.head{
+    width: 100%;
+margin-top: 100px;
+    font-family: 'Cutive',serif;
+    font-variant: small-caps;
+    font-size: 40px;
+position: absolute;
+    color: rgb(30 61 142);
+    font-weight: 800;
+    z-index: 2;
+}
+.sub, .head div{
+    font-variant: normal;
+    font-size: 22px;
+    width: 80%;
+    margin: 0 10%;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+.banner .second{
+    font-variant: small-caps;
+    line-height: 30px;
+    font-size: 20px;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-variant: small-caps;
+    font-size: 25px;
+    color: rgb(63, 93, 173);
+}
+.container{
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px; */
+}
+.container1{
+    background-color: #f2f6f9;
+    display: block;
+    /* justify-content: center; */
+    box-shadow:none
+}
+.text{
+    padding:50px;
+    background-color: #dfe8ef;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+
+   display: flex;
+   flex-direction:column;
+    /* align-items: center; */
+    /* text-align: center; */
+    justify-content: center;
+    width: 50%;
+    height: 400px;
+    /* border: 1px solid black; */
+    font-family: 'Montserrat', sans-serif;
+
+ 
+}
+.text h2{
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    font-variant: small-caps;
+    /* overflow: hidden; */
+}
+.text h3{
+    font-size: 22px;
+}
+.image{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     width: 50%;
+     /* background-color: red; */
+     height: 400px;
+     /* border: 1px solid black; */
+     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+
+     /* overflow: hidden; */
+}
+.image img{
+    width: 80%;
+
+
+    /* margin: 0 auto; */
+}
+
+
+.container:nth-child(odd) 
+{
+    flex-direction: row-reverse;
+}
+
+.container:nth-child(odd) .text, .container:nth-child(even) .image{
+    margin-top: 50px;
+
+}
+
+.container:nth-child(odd) .image, .container:nth-child(even) .text{
+    transform: translateX(30px);
+}
+.container:nth-child(odd) .image img, .container:nth-child(even) .image img{
+
+    margin-left: 60px;
+}
+
+
+.image img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media(max-width:1270px){
+    .sub, .head div{
+        width: 90%;
+        margin: 0 5%;
+        font-size: 18px;
+        letter-spacing: 0.5px;
+    }
+}
+@media(max-width:1024px)
+{
+    .banner{
+        height: 450px;
+    }
+    .text h2{
+        font-size: 28px;
+    }
+    .text h3{
+        font-size: 19px;
+    }
+
+}
+@media(max-width:900px){
+    .head{
+        font-size: 32px;
+    }
+    .sub, .head div{
+        width: 95%;
+        font-size: 17px;
+        margin: 0 2.5%;
+    }
+}
+@media(max-width:800px){
+.head{
+    margin-top: 60px;
+}
+}
+@media(max-width:768px){
+.banner{
+      height: 400px;
+
+}   
+.image img{
+    width: 100%;
+} 
+    .sub, .head div{
+        width: 90%;
+        font-size: 17px;
+        margin: 0 5%;
+    }
+    .head{
+        font-size: 28px;
+    }
+    .image, .text{
+        width: 80%;
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container:nth-child(odd) 
+{
+    flex-direction: column;
+}
+.container:nth-child(odd) .text, .container:nth-child(even) .image{
+    margin-top: 0px;
+
+}
+.container:nth-child(odd) .image, .container:nth-child(even) .text{
+    transform: translateX(0px);
+}
+.container:nth-child(odd) .image img, .container:nth-child(even) .image img{
+
+    margin-left: 0px;
+}
+/* .container:nth-child(odd) .text, .container:nth-child(even) .image{
+    margin-top: 50px;
+
+} */
+.container:nth-child(even) .image, .container:nth-child(odd) .image{
+    transform: translate(30px,-60px);
+    /* transform: translateX(30px); */
+}
+
+/* .image img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+} */
+
+}
+@media(max-width:650px){
+    .banner{
+          height: 380px;
+    
+    }    
+        .sub, .head div{
+            width: 90%;
+            font-size: 15px;
+            margin: 0 5%;
+        }
+        .head{
+            font-size: 25px;
+        }
+    }
+    @media(max-width:550px){
+        .text{
+            height: 450px;
+        }
+        .container1 p{
+            font-size: 20px;
+            margin-left: 5px;
+        }
+    }
+ @media(max-width:450px)
+ {
+     .banner{
+        height: 420px; 
+        background-image: none;
+        background-color: #242B2E;
+     }
+     .head, .head span{
+         color: white;
+     }
+     .text h2{
+        font-size: 25px;
+    }
+    .text h3{
+        font-size: 15px;
+    }
+    .container1 p{
+        font-size: 15px;
+    }
+ }   
+ @media(max-width:375px)
+ {
+.container{
+    margin: 0 0;
+    padding: 0 0;
+}
+.text{
+    padding: 10px;
+}
+.image{
+    height: 300px;
+}
+.container:nth-child(even) .image, .container:nth-child(odd) .image{
+    transform: translate(0px,0px);
+    transform: translateX(0px);
+}
+ }
