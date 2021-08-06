@@ -67,9 +67,9 @@ def plot_png6():
     FigureCanvas(fig).print_png(output)
     return Response(output.getvalue(), mimetype='image/png')    
     
-# app.run(debug=True)       
+app.run(debug=True)       
 
-if __name__ == "__main__":
-     app.debug = False
-     port = int(os.environ.get('PORT', 33507))
-     waitress.serve(app, port=port)
+# if __name__ == "__main__":
+#      app.debug = False
+#      port = int(os.environ.get('PORT', 33507))
+#      waitress.serve(app, port=port)
