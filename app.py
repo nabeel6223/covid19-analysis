@@ -69,7 +69,7 @@ def plot_png6():
     
 # app.run(debug=True)       
 
-# if __name__ == "__main__":
-#      app.debug = False
-#      port = int(os.environ.get('PORT', 33507))
-#      waitress.serve(app, port=port)
+if __name__ == "__main__":
+     app.run(debug=True)  
+    #  port = int(os.environ.get('PORT', 33507))
+    #  waitress.serve(app, port=port)
