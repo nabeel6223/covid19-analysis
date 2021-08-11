@@ -146,7 +146,7 @@ p{
 }
 @media(max-width:1024px)
 {
-    .banner{
+    .banner, .first{
         height: 450px;
     }
     .text h2{
@@ -173,7 +173,7 @@ p{
 }
 }
 @media(max-width:768px){
-.banner{
+.banner, .first{
       height: 400px;
 
 }   
@@ -226,7 +226,7 @@ p{
 
 }
 @media(max-width:650px){
-    .banner{
+    .banner, .first{
           height: 380px;
     
     }    
@@ -250,7 +250,7 @@ p{
     }
  @media(max-width:450px)
  {
-     .banner{
+     .banner, .first{
         height: 420px; 
         background-image: none;
         background-color: #242B2E;
@@ -276,6 +276,8 @@ p{
 }
 .text{
     padding: 10px;
+    height: auto;
+    padding: 30px;
 }
 .image{
     height: 300px;
